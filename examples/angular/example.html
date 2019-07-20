@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PDF.js Viewer directive Example</title>
+
+  <style>
+    html, body, .pdfjs-viewer {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+  </style>
+
+  <!--<link rel="stylesheet" href="../../build/generic/web/viewer.css"/>-->
+</head>
+<body ng-app="example">
+
+<pdfjs-viewer></pdfjs-viewer>
+
+<!--<script src="../../build/generic/web/compatibility.js"></script>
+<script src="../../build/pdf.js"></script>
+<script src="../../build/generic/web/viewer.js"></script>-->
+
+
+<script src="../../node_modules/angular/angular.js"></script>
+
+<script src="../../angular/pdfjs-viewer.js"></script>
+
+<script>
+  angular.module('example', ['pdfjsViewer']);
+
+</script>
+</body>
+</html>

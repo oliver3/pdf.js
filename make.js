@@ -109,6 +109,17 @@ var COMMON_WEB_FILES =
        FIREFOX_CONTENT_DIR + 'PdfjsContentUtils.jsm',
        FIREFOX_CONTENT_DIR + 'PdfjsChromeUtils.jsm',
        FIREFOX_CONTENT_DIR + 'PdfRedirector.jsm'];
+
+//
+// make angular
+// Builds the generic production viewer into an angular directive
+//
+target.angular = function () {
+  target.generic();
+
+};
+
+
 //
 // make generic
 // Builds the generic production viewer that should be compatible with most
